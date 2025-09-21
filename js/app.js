@@ -26,14 +26,14 @@ function saveCars() {
   localStorage.setItem("cars", JSON.stringify(cars));
 }
 
-// Dark mode toggle
+// Dark mode
 themeToggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 
   if (document.body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
+    localStorage.getItem("theme", "dark");
   } else {
-    localStorage.setItem("theme", "light");
+    localStorage.getItemetItem("theme", "light");
   }
 
   console.log("ishladi");
