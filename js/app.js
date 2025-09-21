@@ -1,10 +1,11 @@
 import { cars as initialCars } from "./cars.js";
-
-const root = document.getElementById("root");
-const modal = document.getElementById("modal");
-const addCarBtn = document.getElementById("add-car-btn");
-const themeToggleBtn = document.getElementById("theme-toggle");
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+import {
+  scrollToTopBtn,
+  themeToggleBtn,
+  addCarBtn,
+  modal,
+  root,
+} from "./html-elements.js";
 
 let cars = [];
 
