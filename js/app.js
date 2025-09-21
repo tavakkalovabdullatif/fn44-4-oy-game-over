@@ -141,12 +141,17 @@ window.showDeleteModal = function (id) {
   modal.classList.add("flex");
   modal.innerHTML = `
     <div class="bg-white dark:bg-gray-800 p-6 rounded shadow max-w-sm w-full mx-auto transition-colors duration-300">
-      <p class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">Rostdan ham <span class="text-red-600 dark:text-red-400">${car.name}</span> mashinasini o‘chirmoqchimisiz?</p>
+      <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+      </svg>
+      <p class="text-center text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">Rostdan ham <span class="text-red-600 dark:text-red-400">${car.name}</span> mashinasini o‘chirmoqchimisiz?</p>
       <div class="flex justify-end gap-4">
         <button onclick="deleteCar(${id})" class="px-4 py-2 bg-red-600 text-white rounded">Ha</button>
         <button onclick="closeModal()" class="px-4 py-2 bg-gray-300 dark:bg-gray-700 text-black dark:text-gray-200 rounded">Yo‘q</button>
       </div>
     </div>
+
+    
   `;
 };
 

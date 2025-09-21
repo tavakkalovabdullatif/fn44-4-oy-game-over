@@ -27,10 +27,9 @@
   <!-- BODY -->
   <body
     class="dark bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
-    <nav
-      class="bg-white pb-8 border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+    <header class="bg-white rounded-lg shadow-sm mb-8 dark:bg-gray-800">
       <div
-        class="container max-w-7xl mx-auto flex flex-wrap justify-between items-center p-4">
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <a class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="./img/favicon.png" class="h-12 w-12" alt="Flowbite Logo" />
           <span
@@ -38,7 +37,6 @@
             >Cars</span
           >
         </a>
-
         <div
           class="mt-2.5 flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
@@ -60,10 +58,7 @@
           </button>
         </div>
       </div>
-      <div
-        id="mega-menu-full-dropdown"
-        class="container max-w-7xl mx-auto mt-1 border-gray-200 shadow-xs bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600"></div>
-    </nav>
+    </header>
 
     <div
       id="root"
@@ -99,6 +94,34 @@
         </svg>
       </button>
     </div>
+
+    <footer class="bg-white rounded-lg shadow-sm mt-8 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <a class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./img/favicon.png" class="h-12 w-12" alt="Flowbite Logo" />
+          <span
+            class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white"
+            >Cars</span
+          >
+        </a>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script type="module" src="js/app.js"></script>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
